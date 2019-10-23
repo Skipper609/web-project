@@ -1,0 +1,48 @@
+body{
+    background-image: url("../jared-rice-ujNuUPN12z0-unsplash.jpg");
+    background-size: 100%;
+    background-position-y:20%; 
+    background-repeat: no-repeat;
+}
+.navBar{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navBar ul {
+	list-style-type: none;
+	padding:0;
+	overflow: hidden;
+    background-color: black ;
+    
+}
+.navBar li{
+    display: inline-block;
+	position: relative;
+}
+
+.navBar li a{
+	color:white;
+	display: block;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+.navBar li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.selector{
+	opacity: 2;
+	font-size: 30px;
+}
+.footer{
+	clear: both;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: white;
+	padding: 20px;
+}

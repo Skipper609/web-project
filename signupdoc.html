@@ -25,8 +25,8 @@
     </script>
     <div class="login">
         <h4>Sign Up</h4>
-        <a href="login.php">Already have an account?</a><br>
-        <a href="signupdoc.html">Are You a Doctor?</a><br>
+        <a href="login.php" style="float: left; margin-left: 20px">Already have an account?</a>
+        <a href="signup.html">Not a Doctor?</a><br>
         <form action="authenticate.php" onsubmit="event.preventDefault();" method="get" id="form">
             <input type="text" name="uname" placeholder="name" required>
             <br>
@@ -36,6 +36,9 @@
             <br>
             <input type="text" name="phno" placeholder="PhoneNo" required>
             <br>
+            <textarea name="address" cols="45" rows="5" placeholder="Address"></textarea>
+            <br>
+            <textarea name="description" cols="45" rows="10" placeholder="Description"></textarea><br>
             <button type="submit" onclick="checkpassword()">Submit</button>
             <button type="reset" class="red">Clear</button>
         </form>
