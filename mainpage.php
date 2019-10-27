@@ -1,29 +1,22 @@
+<?php
+session_start();
+include("functions.php");
+initiate();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="/fontawsome/css/all.css">
+    <!-- <link rel="stylesheet" href="css/common.css"> -->
+    <link rel="stylesheet" href="fontawsome/css/all.css">
 </head>
 
 <body>
-    <div class="navBar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Meet Doctor</a></li>
-            <li><a href="#">Book Appointment</a></li>
-            <li><a href="#">See Doctors</a></li>
-            <li><a href="#">Wholesome Chat</a></li>
-            <li><a href="#">About</a></li>
-            <li style="float: right;">
-                <a href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a>
-            </li>
-        </ul>
-    </div>
     <div class="content">
 
     </div>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="css/signin.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
-
 <body>
     <script>
     function checkpassword(){
@@ -25,9 +23,7 @@
     </script>
     <div class="login">
         <h4>Sign Up</h4>
-        <a href="login.php">Already have an account?</a><br>
-        <a href="signupdoc.html">Are You a Doctor?</a><br>
-        <form action="authenticate.php" onsubmit="event.preventDefault();" method="get" id="form">
+        <form action="adduser.php" onsubmit="event.preventDefault();" method="get" id="form">
             <input type="text" name="uname" placeholder="name" required>
             <br>
             <input type="Password" name="pword" placeholder="Password" id="pw1" required>
@@ -39,8 +35,8 @@
             <button type="submit" onclick="checkpassword()">Submit</button>
             <button type="reset" class="red">Clear</button>
         </form>
-        
+        <a href="login.php">Already have an account?</a><br>
+        <a href="signupdoc.html">Are You a Doctor?</a><br>
     </div>
 </body>
-
 </html>

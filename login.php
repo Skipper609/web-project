@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +20,7 @@
 		<input type="Password" name="pword" placeholder="Password" required>
         <br>
         <?php
-            if(isset($_SESSION["login_err"])){
+            if(isset($_SESSION["login_error"])){
                 echo "<p class='err'>Username or Password is Wrong</p>";
             }
         ?>
@@ -25,5 +28,10 @@
     </form>	
     <a href="signup.html">Dont have an account?</a>
 </div>
+<?php
+if(isset($_SESSION["login_error"])){
+    unset($_SESSION["login_error"]);
+}
+?>
 </body>
 </html>

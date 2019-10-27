@@ -1,5 +1,5 @@
 body{
-    background-image: url("jared-rice-ujNuUPN12z0-unsplash.jpg");
+    background-image: url("../jared-rice-ujNuUPN12z0-unsplash.jpg");
     background-size: 100%;
     background-position-y:20%; 
     background-repeat: no-repeat;
@@ -20,6 +20,7 @@ body{
 .navBar li{
     display: inline-block;
 	position: relative;
+	color: white;
 }
 
 .navBar li a{
@@ -40,7 +41,7 @@ body{
 }
 
 .content{
-	height: 600px;
+	height: 500px;
 	background-color: rgba(255, 255, 255, 0.787)
 }
 .yel{
@@ -95,4 +96,8 @@ body{
 	text-align: center;
 	color: white;
 	padding: 20px;
+}
+.ri{
+	position: absolute;
+	left: 40%;
 }

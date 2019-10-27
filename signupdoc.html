@@ -25,9 +25,7 @@
     </script>
     <div class="login">
         <h4>Sign Up</h4>
-        <a href="login.php" style="float: left; margin-left: 20px">Already have an account?</a>
-        <a href="signup.html">Not a Doctor?</a><br>
-        <form action="authenticate.php" onsubmit="event.preventDefault();" method="get" id="form">
+        <form action="adduser.php" onsubmit="event.preventDefault();" method="GET" id="form">
             <input type="text" name="uname" placeholder="name" required>
             <br>
             <input type="Password" name="pword" placeholder="Password" id="pw1" required>
@@ -42,7 +40,8 @@
             <button type="submit" onclick="checkpassword()">Submit</button>
             <button type="reset" class="red">Clear</button>
         </form>
-        
+        <a href="login.php">Already have an account?</a><br>
+        <a href="signup.html">Not a Doctor?</a><br>
     </div>
 </body>
 
