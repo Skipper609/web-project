@@ -1,5 +1,8 @@
 <?php
 function initiate(){
+    if(!isset($_SESSION["type"])){
+        header("Location:login.php");
+    }
     if($_SESSION["type"] == "d"){
         doctornav();
     }

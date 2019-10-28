@@ -1,0 +1,55 @@
+button{
+    width: 100px;
+    height: 100px;
+    background-color: #66ff33;
+    border-radius:5px;
+    margin: 30px;
+    font-weight: bolder;
+}
+button:disabled{
+    background-color: rgb(194, 27, 27);
+    /* background-color: rgb(240, 255, 30); */
+}
+.schedule{
+    background-color: rgba(255, 255, 255, 0.842);
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+.btn{
+    width: 200px;
+    height: 30px;
+    background-color: red;
+}
+.btn:hover{
+    transition-duration: .3s;
+    height: 30px;
+    width: 300px;
+
+}
+.form{
+    background-color: rgba(255, 255, 255, 0.767);
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    margin: 10px;
+    padding: 20px;
+}
+.form button{
+    width: 200px;
+    height: 30px;
+}
+.outer{
+    background-color: rgba(255, 255, 255, 0.767);
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    margin: 10px;
+    padding: 20px;
+}
+.docs{
+    padding: 30px;
+    width: auto;
+    height: auto;
+    display: block;
+}
