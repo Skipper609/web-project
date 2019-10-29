@@ -12,7 +12,7 @@ initiate();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome</title>
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" href="css/common.css"> -->
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="fontawsome/css/all.css">
 </head>
 

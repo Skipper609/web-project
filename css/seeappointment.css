@@ -1,43 +1,11 @@
 button{
     width: 100px;
     height: 100px;
-    background-color: #66ff33;
+    background-color: #b40000;
     border-radius:5px;
     margin: 30px;
+    margin-top:50px ;
     font-weight: bolder;
-}
-button:disabled{
-    background-color: rgb(194, 27, 27);
-    /* background-color: rgb(240, 255, 30); */
-}
-.schedule{
-    background-color: rgba(255, 255, 255, 0.842);
-    color: black;
-    font-weight: bolder;
-    text-align: center;
-}
-.btn{
-    width: 200px;
-    height: 30px;
-    background-color: red;
-}
-.btn:hover{
-    transition-duration: .3s;
-    height: 30px;
-    width: 300px;
-
-}
-.form{
-    background-color: rgba(255, 255, 255, 0.767);
-    text-align: center;
-    color: black;
-    font-weight: bolder;
-    margin: 10px;
-    padding: 20px;
-}
-.form button{
-    width: 200px;
-    height: 30px;
 }
 .outer{
     background-color: rgba(255, 255, 255, 0.767);
@@ -50,9 +18,11 @@ button:disabled{
     padding: 20px;
 }
 .inner{
-    margin: 10px;
+    clear: both;
+    /* margin: 10px; */
     padding: 10px;
     border: 1px solid black;
+    height: 100px;
 }
 .inner button{
     float: right;
@@ -69,12 +39,11 @@ h1{
     background-color: rgba(255, 255, 255, 0.747);
     text-align: center;
 }
-.yel{
-	color: rgb(255, 255, 0);
-}
 .inner img{
+    position: relative;
+    top: -20px;
     float: left;
-    margin: 10px;
+    margin: 20px;
     width: 100px;
     height: 100px;
     border-radius: 50%;

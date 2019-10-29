@@ -8,9 +8,9 @@
     $result = mysqli_query($dbc, $query) or die("query died ".$query);
     if($row=mysqli_fetch_assoc($result)){
         $_SESSION["name"] = $row["name"];
-        $_SESSION["uid"] = $row["uid"];
+        $_SESSION["uid"] = $row["u_id"];
         $_SESSION["type"] = $row["type"];
-
+        $_SESSION["pic"] = "pics/".$row["pic"];
         header("Location: mainpage.php");
     }
     else{

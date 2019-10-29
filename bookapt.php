@@ -13,11 +13,11 @@
 include("functions.php");
 session_start();
 initiate();
-
+$_SESSION["doc_id"] = $_GET["id"];
 require_once("connect.php");
 ?>
 <div class="form">
-    <form action="selectdoctor.php" method="GET">
+    <form action="getappointment.php" method="GET">
         Date :
         <input type="date" name="day" required><br>
         <!-- Doctor : <select name="doctor" id="doctor">

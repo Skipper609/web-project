@@ -42,11 +42,11 @@ function sendtime(){
         window.location.assign("confirmation.php?time="+check);
     }
 }
-function senddoc(){
-    if(btnStatus == false){
-        alert("Select a Doctor to Book Appointment");
-    }
-    else{
-        window.location.assign("getappointment.php?did="+check);
-    }
-}
+// function senddoc(){
+//     if(btnStatus == false){
+//         alert("Select a Doctor to Book Appointment");
+//     }
+//     else{
+//         window.location.assign("getappointment.php?did="+check);
+//     }
+// }

@@ -1,0 +1,32 @@
+.doc{
+    background-color: rgba(255, 255, 255, 0.719);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;   
+}
+.rating{
+ padding: 20px;
+ font-size: 20px;
+ font-weight: 800;
+ background-color: rgba(255, 255, 255,0.719);
+ padding-top: 20px;
+}
+.review{
+    background-color: rgba(160, 52, 52, 0.199);
+    padding: 10px;
+    margin: 10px;
+}
+.rating h2{
+    text-decoration: underline;
+}
+.name{
+    font-size: 30px;
+    padding: 5px;
+}
+.stars{
+    font-size: 20px;
+}
+.dis{
+    font-size: 20px;
+    font-weight: 800;
+}

@@ -13,9 +13,9 @@
 <?php
 session_start();
 
-$day = $_SESSION["day"];
-$doc = $_GET["did"];
-$_SESSION["doc_id"] = $doc;
+$day = $_GET["day"];
+$doc = $_SESSION["doc_id"];
+$_SESSION["day"] = $day;
 include("functions.php");
 initiate();
 require_once("connect.php");
@@ -24,6 +24,7 @@ $query = "select * from appointment where d_id = {$doc} and date = '{$day}'";
 $res = mysqli_query($dbc,$query) or die("Query dead");
 if(mysqli_num_rows($res)==0){
     $q = "INSERT INTO `appointment` (`d_id`, `date`, `nine`, `ten`, `eleven`, `twelve`, `two`, `three`, `four`, `five`) VALUES ('{$doc}', '{$day}', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
+    mysqli_query($dbc,$q);
     $res = mysqli_query($dbc,$query) or die("Query dead");
 }
 

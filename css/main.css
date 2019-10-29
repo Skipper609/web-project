@@ -1,9 +1,9 @@
-body{
+/* body{
     background-image: url("../jared-rice-ujNuUPN12z0-unsplash.jpg");
     background-size: 100%;
-    background-position-y:20%; 
+    /* background-position-y:20%;  
     background-repeat: no-repeat;
-}
+} */
 .navBar{
     margin-top: 20px;
     font-weight: bold;
@@ -100,4 +100,12 @@ body{
 .ri{
 	position: absolute;
 	left: 300px;
+}
+.ri img{
+	border-radius: 50%;
+	display: block;
+	position: relative;
+	top: 10px;
+	width: 40px;
+	height: 40px;
 }
