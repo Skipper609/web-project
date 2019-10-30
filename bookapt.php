@@ -17,20 +17,24 @@ $_SESSION["doc_id"] = $_GET["id"];
 require_once("connect.php");
 ?>
 <div class="form">
-    <form action="getappointment.php" method="GET">
+    <form action="getappointment.php" method="GET" onsubmit="preventDefault();" name="dateform">
         Date :
-        <input type="date" name="day" required><br>
-        <!-- Doctor : <select name="doctor" id="doctor">
-            <?php
-        // $query = "SELECT * FROM `users` WHERE type = 'd'";
-        // $res = mysqli_query($dbc, $query);
-        // while($row = mysqli_fetch_assoc($res)){
-        //     echo "<option value='{$row["u_id"]}'>{$row["name"]}</option>";
-        // }
-        ?> -->
+        <input type="date" name="day" id="day" required><br>
     </select>
-    <button type="submit">Search</button>
+    <button type="button" onclick="validateName();">Search</button>
 </form>
+<script>
+function validateName(){
+    var day = document.getElementById("day");
+    var today = new Date();
+    var d1 = new Date(day.value);
+    if(today>d1){
+        alert("Cant make appointment in past since you are not Dr.Strange");
+    }else{
+        document.forms["dateform"].submit();
+    }
+}
+</script>
 </div>
     
 </body>
