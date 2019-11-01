@@ -59,3 +59,29 @@ body{
 	width: 40px;
 	height: 40px;
 }
+.animx{
+	animation: animatex 1s;
+}
+.animy{
+	animation: animatey 1s;
+}
+@keyframes animatey{
+	from{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes animatex{
+	from{
+		opacity: 0;
+		transform: translate(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0);
+	}
+}

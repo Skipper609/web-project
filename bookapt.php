@@ -16,7 +16,7 @@ initiate();
 $_SESSION["doc_id"] = $_GET["id"];
 require_once("connect.php");
 ?>
-<div class="form">
+<div class="form animy">
     <form action="getappointment.php" method="GET" onsubmit="preventDefault();" name="dateform">
         Date :
         <input type="date" name="day" id="day" required><br>

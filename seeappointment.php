@@ -21,13 +21,13 @@ $uid = $_SESSION["uid"];
 
 $query = "select * from user_apt where day > '{$day}' and u_id = {$uid}";
 $res = mysqli_query($dbc, $query);
-echo "<div class='outer'>";
+echo "<div class='outer animy'>";
 echo "<h2>Future Appointments</h2>";
 while($ro = mysqli_fetch_assoc($res)){
 $qu = "SELECT u_id,name,phone,pic from users where u_id = {$ro["d_id"]}";
 $re = mysqli_query($dbc, $qu);
 $row = mysqli_fetch_assoc($re);
-echo "<div class='inner'>";
+echo "<div class='inner animx'>";
 echo "<img src='pics/{$row["pic"]}'>";
 echo "Name : {$row["name"]}<br>";
 echo "Phone : {$row["phone"]}<br>";
@@ -41,13 +41,13 @@ echo "</div>";
 
 $query = "select * from user_apt where day <= '{$day}' and u_id = {$uid}";
 $res = mysqli_query($dbc, $query);
-echo "<div class='outer'>";
+echo "<div class='outer animy'>";
 echo "<h2>Previous Appointments</h2>";
 while($ro = mysqli_fetch_assoc($res)){
 $qu = "SELECT u_id,name,phone,pic from users where u_id = {$ro["d_id"]}";
 $re = mysqli_query($dbc, $qu);
 $row = mysqli_fetch_assoc($re);
-echo "<div class='inner'>";
+echo "<div class='inner animx'>";
 echo "<img src='pics/{$row["pic"]}'>";
 echo "Name : {$row["name"]}<br>";
 echo "Phone : {$row["phone"]}<br>";

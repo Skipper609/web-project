@@ -21,7 +21,7 @@ $id = $_GET["id"];
 $query = "SELECT u_id,name,phone,address,description from users u,doctor d where u.u_id = d.d_id and u.u_id={$id}";
 $res = mysqli_query($dbc,$query);
 $row = mysqli_fetch_assoc($res);
-echo "<div class='doc'>";
+echo "<div class='doc animx'>";
 echo "Name : {$row["name"]}<br>";
     echo "Address : {$row["address"]}<br>";
     echo "Phone : {$row["phone"]}<br>";

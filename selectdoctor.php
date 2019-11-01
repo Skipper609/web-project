@@ -19,7 +19,7 @@ require_once("connect.php");
 
 $query = "SELECT u_id,name,phone,address,pic from users u,doctor d where u.u_id = d.d_id";
 $res = mysqli_query($dbc,$query);
-echo "<div class='outer'>";
+echo "<div class='outer animx'>";
 while($row = mysqli_fetch_assoc($res)){
     echo "<div class='inner'>";
     echo "<img src='pics/{$row["pic"]}'>";

@@ -17,10 +17,10 @@ initiate();
 </head>
 
 <body>
-    <div class="content">
+    <div class="content animx">
 
     </div>
-    <div class="review">
+    <div class="review animx">
         <p> Customer's Review </p>
         <ul>
             <li>
@@ -70,7 +70,7 @@ initiate();
             </li>
         </ul>
     </div>
-    <div class="review">
+    <div class="review animx">
         <p> Doctor's Reviews </p>
         <ul>
             <li>
@@ -119,10 +119,6 @@ initiate();
                 </div>
             </li>
         </ul>
-    </div>
-    <div class="footer">
-        &copy; All rights Reserverd to Me 😆<br>
-        Privacy Policy | Terms and Condition | Contact Us
     </div>
 </body>
 

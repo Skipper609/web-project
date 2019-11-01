@@ -28,7 +28,7 @@
     $que = "INSERT INTO `user_apt` (`u_id`, `d_id`, `day`, `time`) VALUES ('{$user}', '{$doc}', '{$day}', '$time')";
     $res = mysqli_query($dbc,$que);
     if($res != 1){
-        echo "<h1> Ooops.....!! Looks ike you already made an appointment on {$day}....try different day </h1>";
+        echo "<h1 class='animy'> Ooops.....!! Looks ike you already made an appointment on {$day}....try different day </h1>";
     }
     else{
         echo "<h1> Appointment has been made</h1><br><div id='count'></div><br>";

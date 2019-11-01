@@ -43,7 +43,7 @@ function generateButton($text, $value, $id){
 $q = "SELECT * from users where u_id = {$doc}";
 $r = mysqli_query($dbc,$q);
 $re = mysqli_fetch_assoc($r);
-echo "<div class='schedule'>";
+echo "<div class='schedule animy'>";
 echo "Doctor Name : {$re["name"]}<br>Phone Number: {$re["phone"]}<br>";
 $q = "SELECT * from doctor where d_id = {$doc}";
 $r = mysqli_query($dbc,$q);
