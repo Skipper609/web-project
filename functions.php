@@ -14,9 +14,9 @@ function doctornav(){
     echo '<div class="navBar">
         <ul>
             <li><a href="mainpage.php">Home</a></li>
-            <li><a href="seetoday.php">See Appointments</a></li>
+            <li><a href="seeapt.php">See Appointments</a></li>
             <li><a href="docreview.php">Reviews About You</a></li>
-            <li><a href="previousapp.php">Block A Day</a></li>
+            <li><a href="blockday.php">Block A Day</a></li>
             <li><a href="about.php">About</a></li>
             <li class="ri"><img src="'.$_SESSION["pic"].'"</li>
             <li class="ri">Hi '.$_SESSION["name"].'</li>

@@ -42,11 +42,16 @@ function sendtime(){
         window.location.assign("confirmation.php?time="+check);
     }
 }
-// function senddoc(){
-//     if(btnStatus == false){
-//         alert("Select a Doctor to Book Appointment");
-//     }
-//     else{
-//         window.location.assign("getappointment.php?did="+check);
-//     }
-// }
+var showthis = '';
+
+function show(id){
+    if(showthis === ''){
+        document.getElementById(id).style.display="inherit";
+        showthis = id;
+    }
+    else{
+        document.getElementById(showthis).style.display = "none";
+        document.getElementById(id).style.display="inherit";
+        showthis = id;
+    }
+}

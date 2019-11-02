@@ -17,8 +17,8 @@ include("functions.php");
 initiate();
 require_once("connect.php");
 
-$id = $_GET["id"];
-$query = "SELECT u_id,name,phone,address,description from users u,doctor d where u.u_id = d.d_id and u.u_id={$id}";
+$id = $_SESSION["uid"];
+$query = "SELECT u_id,name,phone,address,description,pic from users u,doctor d where u.u_id = d.d_id and u.u_id={$id}";
 $res = mysqli_query($dbc,$query);
 $row = mysqli_fetch_assoc($res);
 echo "<div class='doc animx'>";
@@ -33,29 +33,29 @@ echo "Name : {$row["name"]}<br>";
        echo '<i class="fas fa-star yel"></i>';
     }
     for($i=5;$i>$rating["ra"];$i--){
-    echo '<i class="fas fa-star"></i>';
-    }
-    echo "  ".$rating["ra"];
-    echo "</div>";
-    echo "<div class='rating animy'>";
-    $quer = "select * from doctor_rating where d_id={$id}";
-    $re = mysqli_query($dbc,$quer);
-    echo "<h2>User Reviews</h2>";
-    while($row =mysqli_fetch_assoc($re)){
-        echo "<div class='review'>";
-        $query2 = "select * from users where u_id = {$row["u_id"]}";
-        $result = mysqli_query($dbc, $query2);
-        $r = mysqli_fetch_assoc($result);
-        echo "<div class='name'>".$r["name"]."</div><br><div class='stars'>";
-        for($i=1;$i<=$row["rating"];$i++){
-        echo '<i class="fas fa-star yel"></i>';
+        echo '<i class="fas fa-star"></i>';
+     }
+     echo "  ".$rating["ra"];
+     echo "</div>";
+     echo "<div class='rating animy'>";
+     $quer = "select * from doctor_rating where d_id={$id}";
+     $re = mysqli_query($dbc,$quer);
+     echo "<h2>User Reviews</h2>";
+     while($row =mysqli_fetch_assoc($re)){
+         echo "<div class='review'>";
+         $query2 = "select * from users where u_id = {$row["u_id"]}";
+         $result = mysqli_query($dbc, $query2);
+         $r = mysqli_fetch_assoc($result);
+         echo "<div class='name'>".$r["name"]."</div><br><div class='stars'>";
+         for($i=1;$i<=$row["rating"];$i++){
+            echo '<i class="fas fa-star yel"></i>';
+         }
+         for($i=5;$i>$row["rating"];$i--){
+             echo '<i class="fas fa-star"></i>';
         }
-        for($i=5;$i>$row["rating"];$i--){
-            echo '<i class="fas fa-star"></i>';
-    }
-    echo "</div><br><div class='dis'>{$row["review"]}</div></div>";
-    }
-    echo '<div>';
+        echo "</div><br><div class='dis'>{$row["review"]}</div></div>";
+     }
+     echo '<div>';
 ?>
 </body>
 </html>
