@@ -31,8 +31,8 @@ if(mysqli_num_rows($res)==0){
 }
 
 function generateButton($text, $value, $id){
-    if($value != ''){
-       //echo "<div class='avail'>";
+    if($value != '' and $value !=0){
+        //echo "<div class='avail'>";
         echo "<button type='button' onclick='show(\"{$id}\")'>";
     }
     else{
@@ -43,7 +43,13 @@ function generateButton($text, $value, $id){
     echo $text."</button>";
 }
 function showInfo($dbc,$userid,$id){
-    if($userid != ""){
+    if($userid == 0){
+        echo "<div class='info' id='{$id}' style='display:none'>";
+        echo "Holiday";
+        
+        echo "</div>";
+    }
+    else if($userid != ""){
 
         $user = "SELECT * from users where u_id = {$userid}";
         $result = mysqli_query($dbc,$user) or die ($user);

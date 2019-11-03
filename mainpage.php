@@ -26,7 +26,7 @@ initiate();
             <li>
                 <div class="card">
                     <div class="container">
-                        <p class="bigger">Storm Trooper</p>
+                        <p class="bigger">John Wick</p>
                         <p>
                             <i class="fas fa-star yel"></i>
                             <i class="fas fa-star yel"></i>
@@ -41,7 +41,7 @@ initiate();
             <li>
                 <div class="card">
                     <div class="container">
-                            <p class="bigger">PDP</p>
+                            <p class="bigger">Morgan Freeman</p>
                         <p>
                             <i class="fas fa-star yel"></i>
                             <i class="fas fa-star yel"></i>
@@ -56,7 +56,7 @@ initiate();
             <li>
                 <div class="card">
                     <div class="container">
-                            <p class="bigger">Dark Knight</p>
+                            <p class="bigger">John Stanford</p>
                         <p>
                             <i class="fas fa-star yel"></i>
                             <i class="fas fa-star yel"></i>
@@ -76,7 +76,7 @@ initiate();
             <li>
                 <div class="card">
                     <div class="container">
-                            <p>John Doe</p>
+                            <p class="bigger">Dr. John Doe</p>
                         <p>
                             <i class="fas fa-star yel"></i>
                             <i class="fas fa-star yel"></i>
@@ -84,14 +84,14 @@ initiate();
                             <i class="fas fa-star yel"></i>
                             <i class="fas fa-star yel"></i>
                         </p>
-                        <p>Architect & Engineer</p>
+                        <p class="small">This Website has been really helpful in connecting with patients</p>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
                     <div class="container">
-                            <p>John Doe</p>
+                            <p class="bigger">Dr.Peter</p>
                         <p>
                             <i class="fas fa-star yel"></i>
                             <i class="fas fa-star yel"></i>
@@ -99,14 +99,14 @@ initiate();
                             <i class="fas fa-star yel"></i>
                             <i class="fas fa-star yel"></i>
                         </p>
-                        <p>Architect & Engineer</p>
+                        <p class="small">Its amezing how incredibally responsive this website is</p>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
                     <div class="container">
-                            <p>John Doe</p>
+                            <p class="bigger">Dr. Stewart</p>
                         <p>
                             <i class="fas fa-star yel"></i>
                             <i class="fas fa-star yel"></i>
@@ -114,7 +114,7 @@ initiate();
                             <i class="fas fa-star yel"></i>
                             <i class="far fa-star"></i>
                         </p>
-                        <p>Architect & Engineer</p>
+                        <p class="small">This made my days easy and better</p>
                     </div>
                 </div>
             </li>

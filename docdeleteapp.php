@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Are You sure?</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/message.css">
 </head>
 <body>
     <?php
@@ -30,12 +31,13 @@
             $q = "select * from users where u_id = {$row[$time]}";
             $re = mysqli_query($dbc,$q);
             $r = mysqli_fetch_assoc($re);
-            echo "<div>";
+            echo "<div class='person'>";
             echo "Name : {$r["name"]}<br>";
             echo "Phone No : {$r["phone"]}<br>";
             echo "</div>";
         }
     }
+    echo "</div>";
 ?>
 
 <button type="button" onclick="window.location.assign('mainpage.php')">No</button>

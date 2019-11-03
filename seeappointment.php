@@ -29,7 +29,7 @@ $re = mysqli_query($dbc, $qu);
 $row = mysqli_fetch_assoc($re);
 echo "<div class='inner animx'>";
 echo "<img src='pics/{$row["pic"]}'>";
-echo "Name : {$row["name"]}<br>";
+echo "Dr. Name : {$row["name"]}<br>";
 echo "Phone : {$row["phone"]}<br>";
 echo "Date : {$ro["day"]}<br>";
 echo "Time :{$ro["time"]}";

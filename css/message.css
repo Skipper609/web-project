@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.767);
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+}
+.person{
+    display: inline-block;
+    
+}

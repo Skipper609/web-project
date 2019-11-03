@@ -20,17 +20,18 @@
     initiate();
     require_once("connect.php");
 
-    $query = "UPDATE `appointment` SET `{$time}` = '{$user}' WHERE `appointment`.`date` = '$day' and `appointment`.`d_id` = '{$doc}';";
+    
+    $que = "INSERT INTO `user_apt` (`u_id`, `d_id`, `day`, `time`) VALUES ('{$user}', '{$doc}', '{$day}', '$time')";
+    $res = mysqli_query($dbc,$que);
+    if($res != 1){
+        echo "<h1 class='animy'> Ooops.....!! Looks like you already made an appointment on {$day}....try different day </h1>";
+    }
+    else{
+        $query = "UPDATE `appointment` SET `{$time}` = '{$user}' WHERE `appointment`.`date` = '$day' and `appointment`.`d_id` = '{$doc}';";
     $res = mysqli_query($dbc, $query);
     if($res != 1){
         echo "<h1> Ooops.....!! Something went wrong </h1>";
     }
-    $que = "INSERT INTO `user_apt` (`u_id`, `d_id`, `day`, `time`) VALUES ('{$user}', '{$doc}', '{$day}', '$time')";
-    $res = mysqli_query($dbc,$que);
-    if($res != 1){
-        echo "<h1 class='animy'> Ooops.....!! Looks ike you already made an appointment on {$day}....try different day </h1>";
-    }
-    else{
         echo "<h1> Appointment has been made</h1><br><div id='count'></div><br>";
     }
     ?>

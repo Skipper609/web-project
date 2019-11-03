@@ -20,8 +20,10 @@ foreach($times as $time){
     }
 }
 if($flag == true){
-    $del =  "DELETE FROM `appointment` WHERE `appointment`.`d_id` = {$doc} AND `appointment`.`date` = '{$day}'";
-    $suc = mysqli_query($dbc, $del) or die("Something went wrong".$del);
+    $q = "INSERT INTO `appointment` (`d_id`, `date`, `nine`, `ten`, `eleven`, `twelve`, `two`, `three`, `four`, `five`) VALUES ('{$doc}', '{$day}', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
+    mysqli_query($dbc,$q);
+    $q = "UPDATE `appointment` SET `nine` = '0', `ten` = '0', `eleven` = '0', `twelve` = '0', `two` = '0', `three` = '0', `four` = '0', `five` = '0' WHERE `appointment`.`d_id` = {$doc} AND `appointment`.`date` = '{$day}';";
+    $suc = mysqli_query($dbc,$q) or die("Error");
     if($suc == 1){
         header("Location:success.php");
     }

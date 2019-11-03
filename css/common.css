@@ -1,7 +1,7 @@
 body{
     background-image: url("../jared-rice-ujNuUPN12z0-unsplash.jpg");
-    background-size: 100%;
-    background-position: top left;
+	background-size: 100%;
+	background-attachment: fixed;
     background-repeat: no-repeat;
 }
 .navBar{
