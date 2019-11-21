@@ -1,0 +1,9 @@
+.content{
+    font-size: 25px;
+    text-justify: auto;
+    font-weight: bold;
+    font-style: italic;
+}
+.content h2{
+    text-align: center;
+}

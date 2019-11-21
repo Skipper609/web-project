@@ -34,7 +34,7 @@ while($row = mysqli_fetch_assoc($res)){
     }
     for($i=5;$i>$rating["ra"];$i--){
         echo '<i class="fas fa-star"></i>';
-     }
+    }
     printf("  %.2f",$rating["ra"]);
     echo "<button class='docs' onclick='window.location.assign(\"seerating.php?id={$row["u_id"]}\");'>See Reviews";
     echo "</button>";

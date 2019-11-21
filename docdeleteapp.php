@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/message.css">
 </head>
 <body>
+<style>
+.container{
+    background-color: rgba(255, 255, 255, 0.747);
+    text-align: center;
+}
+</style>
     <?php
     include("functions.php");
     session_start();
@@ -17,10 +23,10 @@
 
     $doc = $_SESSION["uid"];
     $day = $_SESSION["day"];
-    echo "<div class='container'>";
     echo "<h1>It seems that some appointments has already been made.... <br>
     Are you sure want to cancel them?
     </h1>";
+    echo "<div class='container'>";
 
     $query = "select * from appointment where d_id = {$doc} and date = '{$day}'";
     $res = mysqli_query($dbc,$query);
@@ -37,11 +43,10 @@
             echo "</div>";
         }
     }
-    echo "</div>";
 ?>
-
+<br>
 <button type="button" onclick="window.location.assign('mainpage.php')">No</button>
 <button type="bitton" onclick="window.location.assign('success.php?delentry=yes')">Yes</button>
-
+</div>
 </body>
 </html>

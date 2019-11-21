@@ -13,12 +13,30 @@ initiate();
     <title>Welcome</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slides.css">
     <link rel="stylesheet" href="fontawsome/css/all.css">
+    
 </head>
 
 <body>
     <div class="content animx">
+    <div class="slideshow-container">
 
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <img src="pics/slide1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <img src="pics/slide2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+        <img src="pics/slide3.jpg" style="width:100%">
+        </div>
+        </div>
+        <br>
     </div>
     <div class="review animx">
         <p> Customer's Review </p>
@@ -121,5 +139,5 @@ initiate();
         </ul>
     </div>
 </body>
-
+<script src="js/slide.js"></script>
 </html>

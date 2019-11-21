@@ -53,6 +53,7 @@ echo "Name : {$row["name"]}<br>";
 echo "Phone : {$row["phone"]}<br>";
 echo "Date : {$ro["day"]}<br>";
 echo "Time :{$ro["time"]}";
+echo "<button type='button' style='background-color: #66ff33;' onclick='window.location.assign(\"review.php?doc={$row["u_id"]}\")'>Write A Review</button>";
 echo "</div>";
 }
 

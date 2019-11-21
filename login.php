@@ -13,6 +13,7 @@ session_start();
 </head>
 <body>
 <div class="login">
+    <img src="pics/logo.jpg" alt="logo">
 	<h4>Login</h4>
 	<form action="authenticate.php" method="get">
 		<input type="text" name="uname" placeholder="Username" required>
