@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2019 at 11:18 AM
+-- Generation Time: Nov 26, 2019 at 01:47 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -46,11 +46,22 @@ CREATE TABLE `appointment` (
 --
 
 INSERT INTO `appointment` (`d_id`, `date`, `nine`, `ten`, `eleven`, `twelve`, `two`, `three`, `four`, `five`) VALUES
-(2, '2019-10-27', 1, 1, 1, 1, NULL, NULL, NULL, NULL),
-(2, '2019-10-28', NULL, NULL, NULL, 1, NULL, 1, NULL, 1),
-(2, '2019-10-29', NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL),
-(2, '2019-11-02', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(2, '2019-11-25', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(4, '2019-11-05', NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL),
+(4, '2019-11-06', 0, 0, 0, 0, 0, 0, 0, 0),
+(4, '2019-11-07', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, '2019-11-07', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, '2019-11-08', 0, 0, 0, 0, 0, 0, 0, 0),
+(4, '2019-11-09', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, '2019-11-10', 0, 0, 0, 0, 0, 0, 0, 0),
+(4, '2019-11-12', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, '2019-11-12', 0, 0, 0, 0, 0, 0, 0, 0),
+(4, '2019-11-13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, '2019-11-15', 0, 0, 0, 0, 0, 0, 0, 0),
+(4, '2019-11-19', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, '2019-11-20', 0, 0, 0, 0, 0, 0, 0, 0),
+(4, '2019-11-21', NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL),
+(5, '2019-11-22', NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL),
+(6, '2019-11-23', NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -69,7 +80,12 @@ CREATE TABLE `doctor` (
 --
 
 INSERT INTO `doctor` (`d_id`, `address`, `description`) VALUES
-(2, 'my home', 'i am the best doctor in the world');
+(4, 'Opp. Lakshmi Tower,Main road Moodabidre', 'We here treat and take consultancy of all kind of mental illness and we assure you that we will keep all the information safe.'),
+(5, 'Opp to City Mall, Mangalore', 'We here treat and take consultancy of all kind of mental illness and we assure you that we will keep all the information safe.'),
+(6, 'Near Hotel Vilas, Mangalore', 'We here treat and take consultancy of all kind of mental illness and we assure you that we will keep all the information safe.'),
+(10, 'Opp. to new complex,Main road,Moodabidre', 'We are focused on giving the best treatment for all of the mental illnesses'),
+(11, 'Near Mahendra complex, Main road, Puttur', 'We are focused on giving the best treatment for all of the mental illnesses'),
+(12, 'Opp. Jaya Travel Center, New Bus stand road, Karka', 'We are focused on giving the best treatment for all of the mental illnesses');
 
 -- --------------------------------------------------------
 
@@ -89,7 +105,15 @@ CREATE TABLE `doctor_rating` (
 --
 
 INSERT INTO `doctor_rating` (`u_id`, `d_id`, `rating`, `review`) VALUES
-(1, 2, 4, 'Blah blah blah');
+(1, 4, 5, 'Best Doctor i have ever met'),
+(1, 5, 4, 'Good Doctor'),
+(1, 6, 5, 'She is very talkative and understanding... '),
+(3, 4, 4, 'Good Doctor'),
+(3, 5, 3, 'He is not that great...wouldn\'t recommend'),
+(3, 6, 4, 'Very Good doctor...Even though looks young she has rally good experience'),
+(7, 10, 4, 'Great Doctor'),
+(8, 11, 3, 'Good doctor'),
+(9, 12, 5, 'Great Doctor');
 
 -- --------------------------------------------------------
 
@@ -124,8 +148,17 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`u_id`, `name`, `pwd`, `phone`, `type`, `pic`) VALUES
-(1, 'sudhanva', 'sudhanva', 12345, 'p', '1.jpg'),
-(2, 'sk', 'sk', 12345, 'd', '2.jpg');
+(1, 'sudhanva', 'sudhanva', 8848104034, 'p', '1.jpg'),
+(3, 'shreenath', 'shreenath', 9887756456, 'p', '2.jpg'),
+(4, 'Peter', 'peter', 8836476374, 'd', '3.jpg'),
+(5, 'John', 'john', 8848104034, 'd', '4.jpg'),
+(6, 'Arpitha', 'arpitha', 9374827384, 'd', '5.jpg'),
+(7, 'Karthik', 'karthik', 9822545673, 'p', '7.jpg'),
+(8, 'Sushma', 'sushma', 7338849383, 'p', '6.jpg'),
+(9, 'Karan', 'karan', 7834536453, 'p', '8.jpg'),
+(10, 'Anusha', 'anusha', 8836475839, 'd', '10.jpg'),
+(11, 'Roshan', 'reshma', 8964536473, 'd', '9.jpg'),
+(12, 'Neha', 'neha', 8936473645, 'd', '12.jpg');
 
 -- --------------------------------------------------------
 
@@ -145,10 +178,10 @@ CREATE TABLE `user_apt` (
 --
 
 INSERT INTO `user_apt` (`u_id`, `d_id`, `day`, `time`) VALUES
-(1, 2, '2019-10-27', 'eleven'),
-(1, 2, '2019-10-28', 'nine'),
-(1, 2, '2019-10-29', 'eleven'),
-(1, 2, '2019-11-02', 'nine');
+(1, 4, '2019-11-05', 'eleven'),
+(1, 4, '2019-11-21', 'eleven'),
+(1, 5, '2019-11-22', 'three'),
+(1, 6, '2019-11-23', 'ten');
 
 --
 -- Indexes for dumped tables
@@ -202,7 +235,7 @@ ALTER TABLE `user_apt`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables

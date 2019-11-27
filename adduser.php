@@ -15,18 +15,18 @@ require_once("connect.php");
 
 if(isset($doc)){
     $query = "INSERT INTO `users` (`u_id`, `name`, `pwd`, `phone`, `type`) VALUES (NULL, '{$name}', '{$pword}', '{$phno}', 'd');";
-    $row = mysqli_query($dbc, $query) or die("Query fucked --> ".$query);
+    $row = mysqli_query($dbc, $query) or die("Query error --> ".$query);
     print_r($row);
     $query1 = "select * from users where name = '{$name}'";
-    $res = mysqli_query($dbc, $query1) or die("Query fucked --> ".$query1);
+    $res = mysqli_query($dbc, $query1) or die("Query error --> ".$query1);
     $row = mysqli_fetch_assoc($res);
     $query2 = "INSERT INTO `doctor` (`d_id`, `address`, `description`) VALUES ('{$row["u_id"]}', '{$addres}', '{$desc}');";
-    $row = mysqli_query($dbc, $query2) or die("Query fucked --> ".$query2);
+    $row = mysqli_query($dbc, $query2) or die("Query error --> ".$query2);
     print_r($row);
 }
 else{
     $query = "INSERT INTO `users` (`u_id`, `name`, `pwd`, `phone`, `type`) VALUES (NULL, '{$name}', '{$pword}', '{$phno}', 'p');";
-    $row = mysqli_query($dbc, $query) or die("Query fucked --> ".$query);
+    $row = mysqli_query($dbc, $query) or die("Query error --> ".$query);
     print_r($row);
 }
 

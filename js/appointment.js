@@ -36,7 +36,7 @@ function updateBtn(){
 }
 function sendtime(){
     if(btnStatus == false){
-        alert("Select a time duration before Sending");
+        alert("Select a time duration before Proceeding");
     }
     else{
         window.location.assign("confirmation.php?time="+check);

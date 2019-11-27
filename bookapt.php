@@ -17,7 +17,7 @@ $_SESSION["doc_id"] = $_GET["id"];
 require_once("connect.php");
 ?>
 <div class="form animy">
-    <form action="getappointment.php" method="GET" onsubmit="preventDefault();" name="dateform">
+    <form action="getappointment.php" method="GET" name="dateform">
         Date :
         <input type="date" name="day" id="day" required><br>
     <button type="button" onclick="validateName();">Search</button>
@@ -28,7 +28,7 @@ function validateName(){
     var today = new Date();
     var d1 = new Date(day.value);
     if(today>d1){
-        alert("Cant make appointment in past since you are not Dr.Strange");
+        alert("Cant make appointment in past .... Please select a date of Future!!!");
     }else{
         document.forms["dateform"].submit();
     }

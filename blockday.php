@@ -27,7 +27,7 @@ function validateDay(){
     var today = new Date();
     var d1 = new Date(day.value);
     if(today>d1){
-        alert("How can you take a day off in past?");
+        alert("Cannot block a day of past....please select a date of Future!!");
     }else{
         document.forms["dateform"].submit();
     }
