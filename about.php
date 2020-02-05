@@ -36,24 +36,26 @@ initiate();
 
 <br>Through the approved psychiatris you can book appointments Over 25 mental health tests including:
 <br>
-<br>★ Depression Test
-<br>★ Anxiety Test
-<br>★ Adult ADHD Test
-<br>★ PTSD Test
-<br>★ Alcohol/Substance Abuse and Addiction Test
-<br>★ Eating Disorder Test
-<br>★ Gambling Addiction Test
-<br>★ Mania Test
-<br>★ Narcissism Test
-<br>★ Postpartum Depression Test
-<br>★ Video Game Addiction Test
-<br>★ Internet Addiction Test
-<br>★ Toxic Workplace Test
-<br>★ Panic Disorder Test
-<br>★ Bipolar Disorder Test
-<br>★ Social Anxiety Disorder Test
-<br>★ Psychosis Test
-<br>★ Schizophrenia Test
+<ul>
+<li>📌Depression Test</li>
+<li>📌Anxiety Test</li>
+<li>📌Adult ADHD Test</li>
+<li>📌PTSD Test</li>
+<li>📌Alcohol/Substance Abuse and Addiction Test</li>
+<li>📌Eating Disorder Test</li>
+<li>📌Gambling Addiction Test</li>
+<li>📌Mania Test</li>
+<li>📌Narcissism Test</li>
+<li>📌Postpartum Depression Test</li>
+<li>📌Video Game Addiction Test</li>
+<li>📌Internet Addiction Test</li>
+<li>📌Toxic Workplace Test</li>
+<li>📌Panic Disorder Test</li>
+<li>📌Bipolar Disorder Test</li>
+<li>📌Social Anxiety Disorder Test</li>
+<li>📌Psychosis Test</li>
+<li>📌Schizophrenia Test</li>
+<ul>
 </div>
     </div>
 </body>

@@ -27,6 +27,7 @@ if(isset($_GET["delentry"])){
     $times = array("nine","ten","eleven","twelve","two","three","four","five");
     foreach($times as $time){
         if($row[$time] != ''){
+            $prevent = "";
             $q = "DELETE FROM `user_apt` WHERE `user_apt`.`u_id` = {$row[$time]} AND `user_apt`.`d_id` ={$doc} AND `user_apt`.`day` = '{$day}'";
             $re = mysqli_query($dbc,$q);
         }
